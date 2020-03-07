@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    :root {
+    --darkRed: #9d1c1c;
+    --lightGray: #dddddd;
+    --darkGray: #626262;
+    --lightRed: #dd5151;
+    --shadow: 2px 2px 5px #555;
+
+}
+@font-face {
+    font-family: Prismane;
+    src: url(GlueGun.otf);
+  }
+/* Navbar Code Here */
+.navbar {
+    background-color: var(--darkRed);
+    display: grid;
+    grid-template-columns: 10% 31% 7.8% 14% 12% 6.2% 14%;
+    box-shadow: var(--shadow);
+    grid-gap: 5px;
+    z-index: 2;
+
+
+}
+body{
+    background-color: whitesmoke;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: Prismane;
+    letter-spacing: 3px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #9d1c1c;
+    -webkit-transition: font-size 0.3s, background-color 0.3s; 
+  transition:  0.3s;
+z-index: 3;
+    
+
+}
+.navbar .btnServices {
+    color: white;
+    text-decoration: none;
+    font-family: Prismane;
+    letter-spacing: 3px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #9d1c1c;
+    -webkit-transition: font-size 0.3s, background-color 0.3s; 
+  transition:  0.3s;
+
+}
+.navbar a:hover {
+    font-size: 28px;
+    background-color: #7a1c1c;
+
+}
+.navbar img {
+    width: 45px;
+    padding-left: 40px;
+    transform: translate(8px , 7px);
+
+}
+.navbar h3 {
+    
+    text-align: left;
+    color: white;
+    
+    font-family: Prismane;
+    letter-spacing: 7px;
+    margin: 0;
+    line-height: 55px;
+    padding-left: 5px;
+    font-size: 36px;
+    opacity: 0.85;
+    font-weight: 100;
+    
+ 
+    
+}
+.wrapper {
+    margin: 0 10% 0 10%;
+    background-color: var(--lightGray);
+    padding:  0 10% 10%;
+    
+}
+p  {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+    font-family: Prismane;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 45px;
+    color: var(--darkGray);
+    font-weight: 100;
+}
+.texto {
+    font-family: Prismane;
+
+    letter-spacing: 5px;
+    font-size: 24px;
+    color: var(--darkGray);
+    font-weight: 100;
+}
+.footer {
+    background-color: var(--darkRed);
+    margin: 0 10% 0 10%;
+    text-decoration: none;
+    color: white;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 'logo link'
+                        'bottom bottom';
+    
+}
+.footer .logos{
+    font-size: 20px;
+    text-align: left;
+    padding: 40px 0 20px 60px;
+    grid-area: logo;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.footer .logos .fa-phone {
+    transform: scaleX(-1);
+}
+.footer .links a {
+text-decoration: none;
+color: white;
+background-color: #be3434;
+padding: 5px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.footer .links{
+    text-align: left;
+    grid-area: link;
+    padding: 0 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer .bottom {
+font-size: 15px;
+grid-area: bottom;
+text-align: center;
+padding: 20px 0 20px 0;
+background-color: var(--darkGray);
+font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+
+.Subtitle{ 
+letter-spacing: 3px;
+}
+.Title{
+    letter-spacing: 3px;
+}
+.navbar img {
+    display: none;
+    
+}
+.navbar h3 {
+    display: none;
+    
+}
+.navbar a{
+    font-size: 18px;
+}
+.navbar .btnServices {
+    font-size: 18px;
+    transform: translateX(5px);
+
+}
+.navbar {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+      .footer {
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 'logo' 'link'
+                            'bottom' 'bottom';
+      }
+      .footer .links {
+          padding: 0 20px 25px 20px;
+          text-align: center;
+          
+      }
+      .footer .logos{
+       
+        text-align: center;
+        padding: 40px 20px 20px 20px;
+        grid-area: logo;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+}
+
+    </style>
+</head>
+<body>
+        <div class="navbar">
+                <img src="images/prismane logo.png" alt="logo.png">
+                <h3>Prismane</h3>
+                <a href="index.html" class="btnHome">Home</a>
+                <a href="index.html#port" class="btnPortfolio">Portfolio</a>
+                <a href="index.html#services" class="btnServices">Services</a>
+                <a href="faq.html">FAQ</a>
+                <a href="index.html#contact" class="btnContact">Contact</a>
+            </div>
+<div class="wrapper"> <br> 
+            <h1 class="title">FAQ </h1>
+            <h3 class="texto">How much are website</h3>
+            <p>As of right now, all the websites we make are for building our Portfolio, therefore free</p>
+            <h3 class="texto">What is the workflow</h3>
+            <p>
+                - We ask you a few questions about your company <br>
+                - A visual mockup is created and the client can order changes <br>
+                - Any information from the company (menus, products etc.) is sent to us<br>
+                - The website is coded<br>
+                - Client goes over new website and order necessary changes<br>
+                - Domain is transferred or bought, files uploaded to webhost<br>
+                - Payment is made (if necessary)<br>
+                - Website is online!<br>
+            </p>
+
+            <h3 class="texto" >FAQ is to be updated, more Q&A will be addded in the near future.</h3>
+        </div>
+
+        <div class="footer" id="contact">
+                <div class="logos">
+                        <i class="far fa-address-card"></i> <span> Prismane (Canada) 2019</span> <br> <br>
+                        <i class="far fa-envelope-open"></i> <span> prismanelabs@gmail.com</span> <br><br>
+                        <i class="fas fa-phone" ></i> <span> #289 772 7191</span>
+    
+                </div>
+                    
+                <div class="links">
+                    <h1>About Company</h1>
+                    <p>     We make websites that deliver <br>for our clients, so they can grow.<br> We are hungry for success, responsive  <br>
+                    and most importantly honest.</p>
+                    <a href="index.html" >Home</a> 
+                    <a href="index.html#port">Portfolio</a> 
+                    <a href="index.html#services">Services</a> 
+                    <a href="faq.html">FAQ</a> 
+                    <a href="index.html#contact">Contact</a> 
+                </div> 
+                
+                <div class="bottom">
+                    Prismane &copy; 2019
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fas fa-globe"></i>
+                </div>
+            </div>
+        <script>
+        </script>
+</body>
+</html>
